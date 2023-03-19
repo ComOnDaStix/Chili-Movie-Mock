@@ -1,0 +1,69 @@
+
+.container {
+  background-color: black;
+  color: #fff;
+
+  width: 100%;
+  z-index: 99;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.lineOne {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.listItems {
+  margin: 0 25px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: white;
+  list-style: none;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+}
+/* Add this hover effect */
+.listItems:hover {
+  color: #808080; /* Change to a grey color on hover */
+}
+
+
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 1024px) {
+  .listItems {
+    font-size: 14px;
+    margin: 0 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lineOne {
+    flex-wrap: wrap;
+  }
+
+  .listItems {
+    font-size: 12px;
+    margin: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .listItems {
+    font-size: 10px;
+   
+  }
+  .lineOne {
+    margin-right: 16px;
+  }
+}

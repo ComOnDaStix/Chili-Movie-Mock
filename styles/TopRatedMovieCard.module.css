@@ -1,0 +1,25 @@
+.title {
+    color: #dcdcdc;
+    padding-top: 10px;
+}
+
+.date {
+    color: #999999;
+    padding-top: 10px;
+    
+}
+
+.link {
+    text-decoration: none;
+}
+
+.CardContainer {
+    /* Add transition effect */
+    transition: all 0.2s ease-in;
+    /* Other styles for .CardContainer */
+  }
+  
+  .CardContainer:hover {
+    /* Add any hover effect you want, for example, scaling up the card */
+    transform: scale(1.05);
+  }
