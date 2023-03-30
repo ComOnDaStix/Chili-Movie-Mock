@@ -59,7 +59,7 @@ export async function getStaticProps(context) {
   const movie = res.data;
 
   const videoRes = await axios(`${server}/movie/${id}/videos?api_key=${process.env.API_KEY}&language=en-US`);
-  const videoKey = videoRes.data.results?.[0]?.key;
+  const videoKey = videoRes.data.results?.[0]?.key || null; 
 
   return {
     props: { movie, videoKey },
